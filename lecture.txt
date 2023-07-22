@@ -1,0 +1,24 @@
+Notes Taking App
+
+Users Routes
+=> /users/register: To register a new user
+=> /users/login: For Authenticating the registered user
+
+For below routes to work the user needs to be authenticated (user should have a token)
+Notes Routes
+=> /notes/create: Creating a new note about some concept that you have learn 
+
+Authorization (Need to check who is making the changes or getting the notes)
+
+user is a independent collection 
+notes is a dependent collection 
+=> 1 - Many Relationship
+one user can create many notes
+
+=> /notes: To get all the created notes
+=> /notes/update/:noteID: To update any note
+=> /notes/delete/:noteID : To delete a note
+
+notes collection will depend upon user collection 
+if the user does not exist notes cannot exist
+=>userID will present inside notes collection
